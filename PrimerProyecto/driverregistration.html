@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <img src="images/logo.png" alt="Car Icon" class="car-icon">
+    
+    <div class="container">
+        
+        <h2>Driver Registration</h2>
+        <form action="submit_form.php" method="post">
+            <div class="form-row">
+                <label for="first-name">First Name:</label>
+                <label for="last-name">Last Name:</label>
+            </div>
+            <div class="form-row">
+                <input type="text" id="first-name" name="first_name" placeholder="First Name" required>
+                <input type="text" id="last-name" name="last_name" placeholder="Last Name" required>
+            </div>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                
+            </div>
+            <div class="form-row">
+                
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-row">
+                <label for="password">Password:</label>
+                <label for="repeat-password">Repeat Password:</label>
+            </div>
+            <div class="form-row">
+               
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                
+                <input type="password" id="repeat-password" name="repeat_password" placeholder="Repeat Password" required>
+            </div>
+            <div class="form-row">
+                <label for="address">Address:</label>
+            </div>
+            <div class="form-row">
+                
+                <input type="text" id="address" name="address" placeholder="Address" required>
+            </div>
+            <div class="form-row">
+                <label for="country">Country:</label>
+                <label for="state">State:</label>
+            </div>
+            <div class="form-row">
+               
+                <select id="country" name="country" required>
+                    <option value="" disabled selected>Country</option>
+                    
+                </select>
+                
+                <input type="text" id="state" name="state" placeholder="State" required>
+            </div>
+
+            <div class="form-row">
+                <label for="city">City:</label>
+                <label for="phone-number">Phone Number:</label>
+            </div>
+
+            <div class="form-row">
+                
+                <input type="text" id="city" name="city" placeholder="City" required>
+                
+                <input type="tel" id="phone-number" name="phone_number" placeholder="Phone Number" required>
+            </div>
+            <div class="form-links">
+                <span>Already a user?</span> <a href="userlogin.html">Login here</a>
+                <span>Register as an user?</span><a href="userregistracion.html"> Click here</a>
+            </div>
+            
+            <a href="bookings.html" class="button-link">Sign up</a>
+        </form>
+    </div>
+    <footer>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="rides.html">Rides</a>
+            <a href="bookings.html">Bookings</a>
+            <a href="settings.html">Settings</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+        <p>&copy; Aventones.com</p>
+    </footer>
+</body>
+</html>

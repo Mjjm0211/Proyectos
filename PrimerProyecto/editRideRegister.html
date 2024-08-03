@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Ride</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <img src="images/logo.png" alt="Car Icon" class="car-icon">
+    <div class="container">
+        <header>
+           
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a class="active" href="rides.html">Rides</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                </ul>
+                <form action="search_rides.php" method="get">
+                    <input type="text" placeholder="Search..." name="search">
+                </form>
+                <div class="profile-icon">
+                    <img src="images/iconousuario.jpg" alt="User Icon" class="user-icon">
+                    <div class="dropdown-content">
+                        <a href="settings.html">Settings</a>
+                        <a href="logout.html">Logout</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <h1>Edit Ride</h1>
+            <form action="submit_edit_form.php" method="post">
+                <div class="form-row">
+                    <input type="text" id="departure-from" name="departure_from" value="Current Departure" placeholder="Departure From" required>
+                    <input type="text" id="arrive-to" name="arrive_to" value="Current Arrival" placeholder="Arrive To" required>
+                </div>
+                <div class="form-row">
+                    <label>Days</label>
+                    <label><input type="checkbox" name="days[]" value="Mon" checked> Mon</label>
+                    <label><input type="checkbox" name="days[]" value="Tue" checked> Tue</label>
+                    <label><input type="checkbox" name="days[]" value="Wed"> Wed</label>
+                    <label><input type="checkbox" name="days[]" value="Thu"> Thu</label>
+                    <label><input type="checkbox" name="days[]" value="Fri" checked> Fri</label>
+                    <label><input type="checkbox" name="days[]" value="Sat"> Sat</label>
+                    <label><input type="checkbox" name="days[]" value="Sun"> Sun</label>
+                </div>
+                <div class="form-row">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time" value="10:00" required>
+                    <label for="seats">Seats</label>
+                    <input type="number" id="seats" name="seats" min="1" value="2" required>
+                </div>
+                <div class="form-row">
+                    <label for="fee">Fee</label>
+                    <input type="number" id="fee" name="fee" min="0" value="15" required>
+                </div>
+                <fieldset class="vehicle-details">
+                    <legend>Vehicle Details</legend>
+                    <div class="form-row">
+                        <label for="make">Make</label>
+                        <select id="make" name="make" required>
+                            <option value="Nissan" selected>Nissan</option>
+                           
+                        </select>
+                        <label for="model">Model</label>
+                        <input type="text" id="model" name="model" value="Car Model" required>
+                        <label for="year">Year</label>
+                        <input type="number" id="year" name="year" min="1900" max="2024" value="2020" required>
+                    </div>
+                </fieldset>
+                <div class="form-links">
+                    <a href="myrides.html">Cancel</a>
+                    <a href="createRideRegister.html" class="button-link">Save</a>
+                    
+                </div>
+            </form>
+        </main>
+    </div>
+    <footer>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="rides.html">Rides</a>
+            <a href="bookings.html">Bookings</a>
+            <a href="settings.html">Settings</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+        <p>&copy; Aventones.com</p>
+    </footer>
+</body>
+</html>
