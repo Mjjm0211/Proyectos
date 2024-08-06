@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Rides</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <img src="images/logo.png" alt="Car Icon" class="car-icon">
+
+
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a class="active" href="rides.html">Rides</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                </ul>
+                <form action="search_rides.php" method="get">
+                    <input type="text" placeholder="Search..." name="search">
+                </form>
+                <div class="profile-icon">
+                    <img src="images/iconousuario.jpg" alt="User Icon" class="user-icon">
+                </div>
+            </nav>
+        </header>
+        <main>
+            <h1>My Rides</h1>
+            <button class="new-ride" onclick="location.href='newride.html'">New Ride</button>
+            <table class="rides-table">
+                <thead>
+                    <tr>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Seats</th>
+                        <th>Car</th>
+                        <th>Fee</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#">Quesada</a></td>
+                        <td>Alajuela</td>
+                        <td>2</td>
+                        <td>Nissan Pathfinder 2015</td>
+                        <td>$5</td>
+                        <td><a href="editRideRegister.html">Edit</a> | <a href="deleteRide.html">Delete</a></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </main>
+
+    </div>
+    <footer>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="rides.html">Rides</a>
+            <a href="bookings.html">Bookings</a>
+            <a href="settings.html">Settings</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+        <p>&copy; Aventones.com</p>
+    </footer>
+</body>
+
+</html>

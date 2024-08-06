@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <img src="images/logo.png" alt="Car Icon" class="car-icon">
+    
+    
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a class="active" href="home.html">Home</a></li>
+                    
+                    <li><a href="myrides.html">Rides</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                </ul>
+                <form action="search_rides.php" method="get">
+                    <input type="text" placeholder="Search..." name="search">
+                </form>
+                <div class="profile-icon">
+                    <img src="images/iconousuario.jpg" alt="User Icon" class="user-icon">
+                </div>
+            </nav>
+        </header>
+        <div class="container-home">
+            <div class="form-row">
+                <label for="from">From</label>
+                <select id="from" name="from" required>
+                    
+                    <option value="Quesada" selected>Quesada</option>
+                </select>
+                <label for="to">To:</label>
+                <select id="to" name="to" required>
+                    
+                    <option value="Zarcero" selected>Zarcero</option>
+                </select>
+            </div>
+            <form action="submit_edit_form.php" method="post">
+                <div class="form-row">
+                    <label>Days</label>
+                    <label><input type="checkbox" name="days[]" value="Mon" checked> Mon</label>
+                    <label><input type="checkbox" name="days[]" value="Tue" checked> Tue</label>
+                    <label><input type="checkbox" name="days[]" value="Wed" checked> Wed</label>
+                    <label><input type="checkbox" name="days[]" value="Thu" checked> Thu</label>
+                    <label><input type="checkbox" name="days[]" value="Fri" checked> Fri</label>
+                    <label><input type="checkbox" name="days[]" value="Sat" checked> Sat</label>
+                    <label><input type="checkbox" name="days[]" value="Sun" checked> Sun</label>
+            </div>
+        </form>
+        </div>
+        <main>
+            <h1>Search rides  </h1>
+            
+            <p>Rides found from <b><i>Quesada</i></b> to <b><i>Zarcero</i></b></p>
+            <table class="bookings-table">
+                <thead>
+                    <tr>
+                        <th>Driver</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Seats</th>
+                        <th>Car</th>
+                        <th>Fee</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="images/iconousuario.jpg" alt="User Icon" class="user-icon">
+                            fulano
+                        </td>
+                        <td><a href="#">Quesada</a>
+                        <td>Alajuela</td>
+                        <td>2</td>
+                        <td>Nissan Pathfinder 2015</td>
+                        <td>$5</td>
+                        <td><a href="#">Request</a>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/iconousuario.jpg" alt="User Icon" class="user-icon">
+                            yluna
+                        </td>
+                        <td><a href="#">Quesada</a>
+                        <td>Naranjo</td>
+                        <td>1</td>
+                        <td>Toyota Corolla 2020</td>
+                        <td>$5</td>
+                        <td><a href="#">Request</a>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/iconousuario.jpg" alt="User Icon" class="user-icon">
+                            yluna
+                        </td>
+                        <td><a href="#">Quesada</a>
+                        <td>Naranjo</td>
+                        <td>1</td>
+                        <td>Ford Festiva 1990</td>
+                        <td>--</td>
+                        <td><a href="#">Request</a>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </main>
+        
+        <img src="images/mapa.png" alt="Mapa Icon" class="mapa-icon">
+    </div>
+    
+    <footer>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="myrides.html">Rides</a>
+            <a href="bookings.html">Bookings</a>
+            <a href="settings.html">Settings</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+        <p>&copy; Aventones.com</p>
+    </footer>
+</body>
+</html>
